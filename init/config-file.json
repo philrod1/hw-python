@@ -5,9 +5,9 @@
         {
             "name": "hw-python",
             "image": {
-                "registry": "nexus3.o-ran-sc.org:10004",
-                "name": "o-ran-sc/ric-app-hw-python",
-                "tag": "1.1.0"
+                "registry": "example.com",
+                "name": "hw-python",
+                "tag": "1.2"
             }
         }
     ],
