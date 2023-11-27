@@ -5,7 +5,7 @@
         {
             "name": "hw-python",
             "image": {
-                "registry": "example.com",
+                "registry": "example.com:80",
                 "name": "hw-python",
                 "tag": "1.2"
             }
