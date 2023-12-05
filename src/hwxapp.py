@@ -42,7 +42,6 @@ class HWXapp:
         Function that runs when xapp initialization is complete
         """
         rmr_xapp.logger.info("HWXapp.post_init :: post_init called")
-        print(str(rmr_xapp))
         #self.sdl_alarm_mgr = SdlAlarmManager()
         # sdl_mgr = SdlManager(rmr_xapp)
         # sdl_mgr.sdlGetGnbList()
@@ -54,7 +53,6 @@ class HWXapp:
             sub_mgr.send_subscription_request(enb)
         gnb_list = sub_mgr.get_gnb_list()
         for gnb in gnb_list:
-            print("GNB: " + str(gnb))
             sub_mgr.send_subscription_request(gnb)
         metric_mgr = MetricManager(rmr_xapp)
         metric_mgr.send_metric()
