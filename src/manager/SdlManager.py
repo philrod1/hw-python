@@ -29,12 +29,12 @@ class SdlManager(_BaseManager):
         super().__init__(rmr_xapp)
 
     def sdlGetGnbList(self):
-        gnblist = self._rmr_xapp.sdl_find_and_get(self.__namespace, "GNB")
-        # self.logger.info("SdlManager.sdlGetGnbList:: Processed request: {}".format(json.dumps(gnblist)))
+        gnblist = self._rmr_xapp.sdl_find_and_get(self.__namespace, "GNB", True)
+        self.logger.info("SdlManager.sdlGetGnbList:: Processed request: {}".format(json.dumps(gnblist)))
 
     def sdlGetEnbList(self):
         enblist = self._rmr_xapp.sdl_find_and_get(self.__namespace, "ENB")
-        # self.logger.info("SdlManager.sdlGetGnbList:: Handler processed request: {}".format(json.dumps(enblist)))
+        self.logger.info("SdlManager.sdlGetGnbList:: Handler processed request: {}".format(json.dumps(enblist)))
 
 
 
