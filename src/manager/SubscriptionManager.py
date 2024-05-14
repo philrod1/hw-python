@@ -20,7 +20,7 @@
 """
 
 import requests
-from ricxappframe.xapp_frame import RMRXapp
+from .ricxappframe.xapp_frame import RMRXapp
 import json
 from ..utils.constants import Constants
 from ._BaseManager import _BaseManager

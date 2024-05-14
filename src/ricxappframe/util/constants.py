@@ -16,25 +16,21 @@
 #
 # ==================================================================================
 
-from .ricxappframe.xapp_frame import RMRXapp
-from ricxappframe.metric import metric
-from ._BaseManager import _BaseManager
-from datetime import datetime
 
-# noinspection PyProtectedMember,PyProtectedMember
-class MetricManager(_BaseManager):
+class Constants:
 
-    def __init__(self, rmr_xapp: RMRXapp):
-        super().__init__(rmr_xapp)
-        self.metric_mgr = metric.MetricsManager(self._rmr_xapp._mrc, "system-time", "hw-python")
+    # xapp registration constants
+    SERVICE_HTTP = "SERVICE_{}_{}_HTTP_PORT"
+    SERVICE_RMR = "SERVICE_{}_{}_RMR_PORT"
+    CONFIG_PATH = "/ric/v1/config"
+    REGISTER_PATH = "http://service-{}-appmgr-http.{}:8080/ric/v1/register"
+    DEREGISTER_PATH = "http://service-{}-appmgr-http.{}:8080/ric/v1/deregister"
+    DEFAULT_PLT_NS = "ricplt"
+    DEFAULT_XAPP_NS = "ricxapp"
 
-    def send_metric(self):
+    # message-type constants
+    RIC_HEALTH_CHECK_REQ = 100
+    RIC_HEALTH_CHECK_RESP = 101
 
-        # datetime object containing current date and time
-        now = datetime.now()
-        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-        metric_list = [dt_string]
-        self.logger.info("MetricManager:: metric time {}".format(metric_list))
-        self.metric_mgr.send_metrics(metric_list)
-        self.logger.info("MetricManager:: metric sent")
-
+    # environment variable with path to configuration file
+    CONFIG_FILE_ENV = "CONFIG_FILE"

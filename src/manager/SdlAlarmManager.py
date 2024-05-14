@@ -16,7 +16,7 @@
 #
 # ==================================================================================
 
-from ricxappframe.xapp_frame import RMRXapp
+from .ricxappframe.xapp_frame import RMRXapp
 from ricxappframe.alarm import alarm
 from ._BaseManager import _BaseManager
 

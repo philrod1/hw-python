@@ -17,7 +17,7 @@
 # ==================================================================================
 
 from os import getenv
-from ricxappframe.xapp_frame import RMRXapp, rmr
+from .ricxappframe.xapp_frame import RMRXapp, rmr
 
 
 from .utils.constants import Constants
