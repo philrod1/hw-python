@@ -17,7 +17,7 @@
 # ==================================================================================
 
 import json
-from .ricxappframe.xapp_frame import RMRXapp, rmr
+from ..ricxappframe.xapp_frame import RMRXapp, rmr
 from ..utils.constants import Constants
 from ._BaseHandler import _BaseHandler
 
