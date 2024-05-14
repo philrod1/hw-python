@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from ricxappframe.subsclient.configuration import Configuration
+from ....ricxappframe.subsclient.configuration import Configuration
 
 
 class SubscriptionParams(object):

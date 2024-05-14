@@ -21,8 +21,8 @@ import uuid
 from ctypes import POINTER, Structure
 from ctypes import c_int, c_char, c_char_p, c_void_p, memmove, cast, create_string_buffer
 
-from ricxappframe.rmr.exceptions import BadBufferAllocation, MeidSizeOutOfRange, InitFailed
-from ricxappframe.rmr.rmrclib.rmrclib import rmr_c_lib, get_constants, state_to_status
+from ...ricxappframe.rmr.exceptions import BadBufferAllocation, MeidSizeOutOfRange, InitFailed
+from ...ricxappframe.rmr.rmrclib.rmrclib import rmr_c_lib, get_constants, state_to_status
 
 ##############
 # PRIVATE API

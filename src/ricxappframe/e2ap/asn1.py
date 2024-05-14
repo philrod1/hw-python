@@ -18,8 +18,8 @@ from sys import getsizeof
 from typing import List, Tuple
 from ctypes import POINTER, ARRAY
 from ctypes import c_ulong, c_void_p, c_long, c_size_t, c_int, c_ssize_t, c_uint8
-from ricxappframe.e2ap.asn1clib.asn1clib import asn1_c_lib
-from ricxappframe.e2ap.asn1clib.types import indication_msg_t, subResp_msg_t, ric_action_definition_t, ric_subsequent_action_t
+from ...ricxappframe.e2ap.asn1clib.asn1clib import asn1_c_lib
+from ...ricxappframe.e2ap.asn1clib.types import indication_msg_t, subResp_msg_t, ric_action_definition_t, ric_subsequent_action_t
 
 
 def _wrap_asn1_function(funcname, restype, argtypes):

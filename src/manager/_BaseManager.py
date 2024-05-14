@@ -16,7 +16,7 @@
 #
 # ==================================================================================
 
-from .ricxappframe.xapp_frame import RMRXapp
+from ..ricxappframe.xapp_frame import RMRXapp
 from abc import ABC
 
 

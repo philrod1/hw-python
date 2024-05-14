@@ -19,7 +19,7 @@
 #   Abstract:   This is a collection of extensions to the RMR base package
 #               which are likely to be convenient for Python programs.
 
-from ricxappframe.rmr import rmr
+from ...ricxappframe.rmr import rmr
 
 
 def rmr_rcvall_msgs(mrc, pass_filter=None, timeout=0):

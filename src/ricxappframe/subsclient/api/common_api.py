@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from ricxappframe.subsclient.api_client import ApiClient
+from ....ricxappframe.subsclient.api_client import ApiClient
 
 
 class CommonApi(object):

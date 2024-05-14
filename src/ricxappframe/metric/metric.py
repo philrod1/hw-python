@@ -24,8 +24,8 @@ from ctypes import c_void_p
 import json
 import time
 from mdclogpy import Logger
-from ricxappframe.rmr import rmr
-from ricxappframe.metric.exceptions import EmptyReport
+from ...ricxappframe.rmr import rmr
+from ...ricxappframe.metric.exceptions import EmptyReport
 
 ##############
 # PRIVATE API

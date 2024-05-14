@@ -16,8 +16,8 @@
 #
 # ==================================================================================
 
-from .ricxappframe.xapp_frame import RMRXapp
-from ricxappframe.metric import metric
+from ..ricxappframe.xapp_frame import RMRXapp
+from ..ricxappframe.metric import metric
 from ._BaseManager import _BaseManager
 from datetime import datetime
 
